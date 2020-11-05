@@ -6,11 +6,31 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'be0d1d1ef96b22846db6cbe46eb6539e9b099834',
+    'reference' => '681b8566fab7f9ce9207f2fa9bfd02f62c7f4af0',
     'name' => 'symfony/skeleton',
   ),
   'versions' => 
   array (
+    'doctrine/annotations' => 
+    array (
+      'pretty_version' => '1.12.x-dev',
+      'version' => '1.12.9999999.9999999-dev',
+      'aliases' => 
+      array (
+        0 => '9999999-dev',
+      ),
+      'reference' => 'e2623fd97c136cc7a18b467da8d8331c01de051c',
+    ),
+    'doctrine/lexer' => 
+    array (
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
+      'aliases' => 
+      array (
+        0 => '1.3.x-dev',
+      ),
+      'reference' => '4f8001a38062a3104c612ada5143b267eb57227f',
+    ),
     'monolog/monolog' => 
     array (
       'pretty_version' => 'dev-master',
@@ -86,8 +106,8 @@
     array (
       'provided' => 
       array (
-        0 => '1.0',
-        1 => '1.0.0',
+        0 => '1.0.0',
+        1 => '1.0',
       ),
     ),
     'psr/simple-cache-implementation' => 
@@ -392,7 +412,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'be0d1d1ef96b22846db6cbe46eb6539e9b099834',
+      'reference' => '681b8566fab7f9ce9207f2fa9bfd02f62c7f4af0',
     ),
     'symfony/string' => 
     array (
