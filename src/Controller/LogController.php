@@ -6,6 +6,7 @@ use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\GreetingGenerator;
 
 class logController extends AbstractController
 {
@@ -13,9 +14,10 @@ class logController extends AbstractController
      * @Route("/logger/{name}", methods={"GET"}, name="task_crte")
      * 
      */
-    public function index($name, LoggerInterface $logger)
+    public function index($name, LoggerInterface $logger, GreetingGenerator $generator)
     {
-        $logger->info("Saying hello to $name!");
-        return new Response('Hello,' . $name, 200);
+        $greeting = $generator->getRandomGreeting();
+        $logger->info("Saying $greeting to $name!");
+        return new Response($greeting.', сщ'.$name, 200);
     }
 }
